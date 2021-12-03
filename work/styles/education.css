@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#education{
+    padding: 0 100px; 
+    width: 100%;
+    min-height: 100vh;
+}
+.edu-cards{
+    display: flex;
+    gap:20px; 
+}
+#education h1{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.edu-card{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width:400px;
+    height: 380px;
+    border: 1px solid #f1f1f1;
+    
+}
+.edu-img{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    
+}
+img{
+    width: 100%;   
+}
+.edu-content{
+   padding: 0px 20px 20px 20px; 
+}
+
+@media (max-width:768px){
+    #education{
+        padding: 20px;
+    }
+    .edu-cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .edu-card{
+        width: auto;
+        height: auto;
+    }
+    .edu-content{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+  }
+  

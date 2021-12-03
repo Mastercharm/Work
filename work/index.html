@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Krishna Kandagatla | UI Developer</title>
+    <link href="images/sai1.jpg" rel="icon" sizes="32*32">
+    <link href="images/sai1.jpg" rel="apple-touch-icon">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<section id="home">
+    <div class="home-profile">
+        <div class="pro-img">
+            <img src="images/sai1.jpg"/>
+        </div>
+        <div class="pro-content">
+            <h1>Sai Krishna Kandagatla</h1>
+            <h3>UI Developer | Web Developer</h3>
+        </div>
+        
+    </div>
+    <div class="home-cards">
+        
+        <div class="home-card" id="click-open">
+            <div class="home-content">
+                <h2>About</h2>
+                <p>Know Me.</p>
+            </div>
+            <div class="home-img">
+                <img src="images/avatar.png"/>
+            </div>
+        </div>
+        
+        
+        <div class="home-card" id="click-open1">
+            <div class="home-content">
+                <h2>Education</h2>
+                <p>Studies I completed.</p>
+            </div>
+            <div class="home-img">
+                <img src="images/education.jpg"/>
+            </div>
+        </div>
+
+      
+        <div class="home-card" id="click-open2">
+            <div class="home-content">
+                <h2>Skills</h2>
+                <p>The skills I know.</p>
+            </div>
+            <div class="home-img" id="click-open">
+                <img src="images/skills.jpg"/>
+            </div>
+        </div>
+
+        
+        <div class="home-card" id="click-open3">
+            <div class="home-content">
+                <h2>Work</h2>
+                <p>Projects I've built.</p>
+            </div>
+            <div class="home-img">
+                <img src="images/hand-drawn-man-working-from-home_23-2148818123.webp"/>
+            </div>
+        </div>
+
+    </div>
+    <div class="profile-content">
+        <a href="SAI KRISHNA RESUME.pdf"><i class="far fa-file-pdf"></i>Have an eye on my resume.</a>
+        <a href="https://api.whatsapp.com/send?phone=919000826971"><i class="fab fa-whatsapp"></i>Text me here.</a>
+        <a href="https://www.linkedin.com/in/sai-krishna-kandagatla-b79063170"><i class="fab fa-linkedin"></i>Get in Touch.</a>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+     $("#click-open").click(function(){
+        window.location.href = 'about.html';
+    });
+    $("#click-open1").click(function(){
+        window.location.href = 'education.html';
+    });
+    $("#click-open2").click(function(){
+        window.location.href = 'skills.html';
+    });
+    $("#click-open3").click(function(){
+        window.location.href = 'projects.html';
+    });
+
+});
+</script>
+</body>
+</html>

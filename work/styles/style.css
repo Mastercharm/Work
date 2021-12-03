@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+    background-color: #212121;
+}
+#home{
+    padding: 0 100px; 
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top:100px;
+}
+.home-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: center;
+   
+    padding: 10px;
+    border-radius: 10px;
+}
+.pro-img{
+    width: 100px;
+    border-radius: 50%;
+   
+}
+.pro-img img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.pro-content h1{
+    font-size: 1.75rem;
+    color: #ffffff;
+    font-weight:400;
+    letter-spacing: 1px;
+}
+.pro-content h3{
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight:400;
+    letter-spacing: 1px;
+}
+
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 2%;
+    
+    
+}
+
+.home-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+.home-img{
+    width: 100px;
+}
+.home-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.home-content{
+    letter-spacing: 1px;
+}
+.home-content h2{
+    font-size: 1.5rem;
+    font-weight:500;
+    color:#212121
+}
+.home-content p{
+    font-size: 0.9rem; 
+    color:#a5a5a5;
+}
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #f1f1f1; */
+    margin-top: 2%;
+    gap: 20px;
+    padding: 10px;
+}
+.profile-content a{
+    text-decoration: none;
+    color:#f1f1f1;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.profile-content a i{
+    font-size: 1.25rem;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+
+
+
+
+@media (max-width:768px){
+    #home{
+        padding: 20px;
+        position: relative;
+        top: 40px;
+    }
+    .pro-content h1{
+        font-size: 1.25rem;
+    }
+    .pro-content h3{
+        font-size: 1rem;
+    }
+    .pro-content h1, h3{
+       text-align: center;
+    }
+    .home-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

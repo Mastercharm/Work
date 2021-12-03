@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#skills{
+    padding: 0 100px; 
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 2%;
+}
+#skills h1{
+    padding: 10px 0;
+    font-size: 2rem;
+}
+.skills-cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:20px;
+}
+
+.skills-card{
+    width:200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.skills-card img{
+    height:100%;
+}
+/* .tooltip{
+   visibility: hidden;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #212121;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top:150px;
+    left: 300px;
+    
+}
+.skills-card:hover .tooltip{
+    visibility: visible;
+} */
+
+@media (max-width:768px){
+    #skills{
+        padding: 20px;
+    }
+    .skills-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
